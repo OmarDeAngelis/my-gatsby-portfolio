@@ -3,22 +3,23 @@ module.exports = {
     title: "my-portfolio",
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     icon: "src/images/icon.png",
+    //   },
+    // },
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/",
       },
       __key: "images",
     },
