@@ -56,5 +56,19 @@ const Wrapper = styled.ul`
   gap: 1rem;
   li {
     padding: 0.2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover svg {
+      color: var(--dark-cornflower-blue);
+      transform: scale(1.2);
+    }
+  }
+  svg {
+    transition: var(--btn-transition);
+
+    font-size: 2em;
+    color: var(--color-black);
   }
 `;

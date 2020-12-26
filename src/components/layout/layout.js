@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <LayoutProvider>
       <Navbar />
       <Sidebar />
-      {children}
+      <main>{children}</main>
     </LayoutProvider>
   );
 };
