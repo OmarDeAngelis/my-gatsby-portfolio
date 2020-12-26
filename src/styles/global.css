@@ -20,6 +20,7 @@
   --radius: 0.25rem;
   /*Transition*/
   --transition: all 175ms ease-in-out;
+  --btn-transition: all 100ms linear;
 }
 
 *,
@@ -35,7 +36,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9em;
   line-height: 1.5;
-  margin-top: 5rem;
   color: var(--color-black);
   letter-spacing: var(--spacing);
 }
@@ -144,4 +144,8 @@ p {
   text-align: center;
   display: grid;
   place-items: center;
+}
+
+.show-sidebar {
+  transform: translateX(0%) !important;
 }
