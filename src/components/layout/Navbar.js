@@ -27,6 +27,13 @@ const Navbar = () => {
 
 const Wrapper = styled.nav`
   padding: 1rem;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--color-white);
+
   header {
     display: flex;
     justify-content: space-between;

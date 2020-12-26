@@ -84,23 +84,6 @@ const Wrapper = styled.aside`
         }
       }
     }
-    .sidebar-social {
-      li {
-        &:hover {
-          cursor: pointer;
-        }
-        &:hover svg {
-          color: var(--dark-cornflower-blue);
-          transform: scale(1.2);
-        }
-      }
-      svg {
-        transition: var(--btn-transition);
-
-        font-size: 2em;
-        color: var(--color-black);
-      }
-    }
   }
   @media screen and (min-width: 992px) {
     display: none;
