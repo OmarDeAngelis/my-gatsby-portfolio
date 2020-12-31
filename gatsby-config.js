@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "my-portfolio",
+    title: "Web Developer Portfolio",
+    description: "Questo è un portfolio di prova per imparare a usare Gatsby",
+    siteUrl: "https://portfolio-thomas-gatsby.netlify.app/",
+    author: "@thomasD",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -38,6 +41,14 @@ module.exports = {
         queryLimit: 1000, // Default to 100
         contentTypes: [`job`, `work`, "poject"],
         //If using single types place them in this array.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-slug-field",
+      options: {
+        filter: { internal: { type: "StrapiJob" } },
+        source: "title",
+        fieldName: "slug",
       },
     },
   ],
